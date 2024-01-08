@@ -1,7 +1,7 @@
-# HOTEL-POMELIA
+# 🌿🌿🌿 HOTEL-POMELIA 🌿🌿🌿
 
  
-👉 [My Website](https://vuesseedm.github.io/HOTEL-POMELIA/)
+👉 [Hotel Pomelia](https://vuesseedm.github.io/HOTEL-POMELIA/)
 
 
 
