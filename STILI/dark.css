@@ -1,0 +1,50 @@
+
+#toggleDark {
+  width: 60px;
+  height: 55px;
+}
+.bi {
+  margin-top: -25px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: yellow;
+  border-top: 5px solid white;
+  border-right: 5px solid red;
+  border-left: 5px solid green;
+  border-radius: 50%;
+  transition: .5s linear;
+  overflow: hidden;
+  transition: border-bottom;
+  transition: border-top;
+  transition: border-left;
+  transition: border-right;
+}
+.bi:hover {
+  color: rgb(93, 0, 255);
+  position: relative;
+  animation-name: spin;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+.bi:active {
+  border: 3px solid black; 
+  box-shadow: 0 0 20px black;
+  transform: scale(1.3);
+  background-image: url(light-148483_1280.webp) ;
+  background-color:rgb(93, 0, 255);
+  color: yellow;
+}
+
+
+   

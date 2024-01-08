@@ -1,0 +1,77 @@
+.grid-container {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2vw; 
+  grid-auto-rows: 19vw;
+ 
+}
+
+.griditem {
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-left: 1px solid green;
+  border-top: 1px solid green;
+  border-right: 3px solid rgb(93, 0, 255);
+  border-bottom: 3px solid rgb(93, 0, 255);
+  box-shadow: 1px 1px 100px rgba(93, 0, 255, 0.14);
+  background-size: cover;
+  background-position: center;
+  padding: 5px;
+  font-size: 10px;
+  box-sizing: border-box;
+  transition: 1s;
+  position: relative;
+  overflow: hidden;
+  word-spacing: 3px;
+}
+.griditem p {
+  color: white;
+  font-size: 20px;
+}
+.griditem img {
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+}
+
+.item-des{
+  position: absolute;
+  font-size: 20px;
+  top: 22px;
+  left: 50px;
+  text-shadow: 0 0 10px green;
+  color: white;
+ 
+}
+.item-des:hover{
+  color: green;
+  text-shadow:0 0 10px rgb(93, 0, 255);
+}
+.griditem:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+.rooms {
+  margin-top: 10px;
+  text-align: center;
+  padding: 42px 0;
+  color: green;
+  font-size: 40px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  transition: 0.5s linear;
+}
+.rooms:hover{
+  color: white;
+  text-shadow: 0 0 10px green;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .chi{
+    font-size: 14px;
+text-align: center;
+margin: 0 30px;
+  }
+}

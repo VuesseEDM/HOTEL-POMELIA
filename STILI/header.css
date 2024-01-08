@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
+@media only screen and (orientation: portrait) and (min-height: 1024px){
+  .header-content{
+    margin-top: 42px;
+  }
+}
+
+/* HEADER NAV */
+
+.hero{
+  width: 100%;
+}
+
+.logo-link{
+  color: green;
+  font-size: 40px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 10px;
+}
+.logo-link:hover{
+  background-color: green;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 30px;
+}
+.header-nav{
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: ;
+}
+.header-menu{
+  min-width: 200px;
+  justify-content: center;  
+  padding: 17px 0;
+  flex-wrap: wrap;
+}
+.header-menu-link{
+  color: gray;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 2px 42px;
+  text-transform: uppercase;
+  position: relative;
+  flex-wrap: wrap;
+}
+.header-menu-link:hover{
+  color: green;
+  text-decoration: underline;
+}
+.header-menu-link:active {
+  color: rgb(93, 0, 255);
+}
+
+.dropdown span {
+  color: grey;
+}
+.dropdown span:hover{
+  color: green;
+  text-decoration: underline;
+}
+
+.dropdown > span {
+  z-index: 2;
+  position: relative;  
+  cursor: pointer;
+}
+.dropdown:hover .features-menu {   
+  display: flex;                   
+  flex-direction: column;
+  background:rgb(93, 0, 255);
+}
+.features-menu a {
+  overflow: hidden;
+  color: white;
+}
+.features-menu a:hover{
+  text-decoration: underline;
+  opacity: 0.9;
+  color: red;
+}
+
+.dropdown {
+  position: relative;
+  color: gray;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 2px 42px;
+  text-transform: uppercase;
+}
+.features-menu {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-top: 1px;
+  padding-top: 20px;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+
+.features-menu li {
+  list-style: none;
+  border-bottom: 1px solid white;
+  padding: 0 40px 10px 20px;
+  margin: 10px;
+}
+
+.features-menu li:last-of-type {
+  border-bottom: none;
+}
+
+.ghost-button{
+  background-color: green;
+  color: white;
+  border: 1px solid gray;
+  padding: 0 15px;
+  font-size: .75em;
+}
+.ghost-button:hover{
+  background-color: white;
+  color:green
+}
+.header-description{
+  margin: auto;
+  text-align: center;
+  max-width: 700px;
+  padding-top: 60px;
+}
+.header-description p {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.header-title{
+  margin: 5px 0;
+  font-size: 80px;
+  letter-spacing: 20px;
+  line-height: 2;
+  transition: 0.3s linear;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  text-shadow: 3px 3px 3px rgb(93, 0, 255);
+}
+.header-title:hover{
+  color: white;
+  text-shadow: 0 0 10px green;
+}
+  
+  .header-content{
+    position: relative;
+  }
+  
+  .data{
+    font-size: 13px;
+    word-spacing: 1px;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .data h2:hover{
+    transition: 1s linear;
+    color: white;
+    text-shadow: 0 0 10px green;
+    transform: scale(1.1);
+  }
+  .date {
+    border-left: 3px solid rgb(93, 0, 255);
+    border-top: 3px solid rgb(93, 0, 255);
+    border-right: 5px solid green;
+    border-bottom: 5px solid green;
+    margin-bottom: 11px;
+    transform: none;
+    padding: 10px 100px;
+    
+  } 
+  .date:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    overflow: hidden;
+    box-shadow: 0 0 22px rgb(93, 0, 255);
+  }
+  
+  .globo { 
+    width: 3%;
+    position: absolute;
+    left: 190px;
+    top: 22px;
+    opacity: 1;
+    animation: spin 5s infinite;
+    transition: 1s linear;
+    filter: drop-shadow(10px 10px 4px green);
+  }
+  .globo:hover{
+    opacity: 0.6;
+    filter: drop-shadow(20px 20px 4px rgb(93, 0, 255));
+    
+  }
+  @keyframes spin {
+    from { transform: rotateZ(0deg); }
+    to { transform: rotateZ(360deg);}
+  }
+
+  @media only screen and (max-width: 600px) {
+    .header-title{
+      font-size: 20px;
+    }
+  .logo-link{
+    font-size:12px;
+    margin: 0;
+    padding: 0;
+  }
+  .date{
+    padding: 3px 30px;
+    margin-top: 20px;
+  }
+  h2{
+    font-size: 15px;
+    
+  }
+  .globo{
+    display: none;
+  }
+  .header-menu{
+    max-width: none;
+    display: inline;
+  }
+
+
+}
+  
+
+  @media only screen and (min-width: 600px) and (max-width: 1024px) {
+.header-menu{
+  flex-direction: column;
+}
+    .header-title{
+      font-size: 30px;
+    }
+  .logo-link{
+    font-size:16px;
+    margin: 0;
+    padding: 0;
+  }
+  .date{
+    padding: 5px 40px;
+    margin-top: 40px;
+  }
+  h2{
+    font-size: 19px;
+    
+  }
+  .globo{
+    display: none;
+  }
+  .header-menu{
+ flex-direction: column;
+  }
+  .ghost-button{
+    margin-left: -30px;
+  }
+
+  }
